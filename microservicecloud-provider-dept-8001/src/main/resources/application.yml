@@ -21,3 +21,17 @@ spring:
       initial-size: 5
       max-total: 5
       max-wait-millis: 200
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id:  microservicecloud-dept8001 #自定义服务名称
+    prefer-ip-address: true
+
+
+info:
+  app.name: jks-microservicecloud
+  company.name: lenovo
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
