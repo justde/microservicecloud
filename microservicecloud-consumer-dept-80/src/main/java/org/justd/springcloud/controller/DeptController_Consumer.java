@@ -20,7 +20,7 @@ import java.util.List;
 @RestController
 public class DeptController_Consumer {
 
-    public static final String REST_URL_PREFIX = "http://127.0.0.1:8001";
+    private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
     @Autowired
     private RestTemplate restTemplate;
 

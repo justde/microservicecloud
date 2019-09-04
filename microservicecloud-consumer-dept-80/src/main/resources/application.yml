@@ -4,10 +4,18 @@ spring:
   application:
     name: microservicecloud-dept-consumer
 
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 3000
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  OkToRetryOnAllOperations: true
+  restclient:
+    enabled: true
+
+
 eureka:
   client:
+    register-with-eureka: false
     service-url:
-      defaultZone: http://localhost:7001/eureka
-  instance:
-    instance-id:  microservicecloud-dept80 #自定义服务名称
-    prefer-ip-address: true
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
