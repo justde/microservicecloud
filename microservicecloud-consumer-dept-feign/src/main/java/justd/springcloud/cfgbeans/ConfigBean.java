@@ -1,7 +1,6 @@
-package org.justd.springcloud.cfgbeans;
+package justd.springcloud.cfgbeans;
 
 import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RandomRule;
 import com.netflix.loadbalancer.RetryRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -24,8 +23,6 @@ public class ConfigBean {
 
     @Bean
     public IRule myRule(){
-        RetryRule retryRule = new RetryRule();
-        retryRule.setMaxRetryMillis(1000);
-        return retryRule;
+        return new RetryRule();
     }
 }
