@@ -1,4 +1,4 @@
-package justd.springcloud.controller;
+package org.justd.springcloud.controller;
 
 import org.justd.springcloud.entities.Dept;
 import org.justd.springcloud.service.DeptClientService;

@@ -1,4 +1,4 @@
-package justd.springcloud.cfgbeans;
+package org.justd.springcloud.cfgbeans;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RetryRule;
